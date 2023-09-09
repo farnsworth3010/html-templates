@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eco Arcade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    </head>
+    <body id="cert-page">
+        <header>
+            <nav>
+
+            </nav>
+        </header>
+        <main>
+            <section class="section-center">
+                <video src="./img/bg5.mp4" loop muted autoplay></video>
+                <div class="block">
+                    <h1>Поздравляем!</h1>
+                    <p>Вы полностью прошли игру Eco Arcade. <br> Теперь вы можете получить сертификат</p>
+                    <a href="#section2" class="btn">
+                        Получить
+                    </a>
+                </div>
+            </section>
+            <section id="section2">
+                <canvas id="cnv" width="2500" height="1769"></canvas>
+                <form action="">
+                    <input id="fio-input" type="text" placeholder="Введите своё имя и фамилию">
+                    <button id="fio-submit" type="submit">Отправить</button>
+                    <a class="hidden-cert" id="dl" download="certificate.png" href="">Скачать сертификат</a>
+                    <a class="hidden-cert" id="sharebttn"  href="">Поделиться</a>
+                </form>
+            </section>
+        </main>
+        <footer id="cert-footer">
+            <h1>
+                <a href="index.html">
+                    Eco Arcade 2021
+                </a>
+            </h1>
+            <ul>
+                <li class="download"><a href="https://github.com/kgbsenior/SpaceArcade/raw/ecoarcade/eco.apk">Скачать
+                        игру&nbsp;&nbsp; |</a></li>
+                <li>
+                    <a href="https://vk.com/ecoarcade" target="_blank">
+                        <div class="img-container">
+                            <img src="./img/vk.png" alt="">
+                    </a></li>
+                </div>
+            </ul>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,576 @@
+*
+    scroll-behavior: smooth
+    margin: 0
+    padding: 0
+    outline: none !important
+
+.wrapper
+    padding: 12vw
+    @media screen and (max-width: 768px)
+        padding: 8vw
+
+img
+    user-select: none
+
+a
+    cursor: pointer
+
+body
+    background: #1C1B21
+    min-height: 100vh
+    position: relative
+    font-family: "Poppins", sans-serif
+    
+
+             
+.last-tracks
+    width: 100%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    margin-top: 150px
+    justify-content: center
+    .audio-player__tracklist-cover_active
+        transform: scale(1)
+        animation: dancingCover 2s infinite ease-in-out
+        transition: 0.3s
+        @keyframes dancingCover
+            0%
+                transform: scale(1)
+                box-shadow: 0px 0px 0px 5px #7A66CC, 0px 0px 0px 30px #7a66cc6c, 0px 0px 15px 70px  rgba(0, 0, 0, 0.15)
+            50%
+                transform: scale(0.95)    
+                box-shadow: 0px 0px 0px 15px #7A66CC, 0px 0px 0px 20px #7a66cc6c, 0px 0px 30px 45px rgba(0, 0, 0, 0.15)
+            100%
+                transform: scale(1)    
+                box-shadow: 0px 0px 0px 5px #7A66CC, 0px 0px 0px 30px #7a66cc6c, 0px 0px 15px 70px rgba(0, 0, 0, 0.15)
+    .audio-player__track
+        cursor: pointer
+        transition: 0.3s
+    .audio-player__track_active
+        color: #7A66CC
+        transition: 0.3s
+    audio
+        margin-bottom: 15px
+    ul
+        list-style: none
+        li
+            display: flex
+        .audio-player__counter
+            margin-right: 15px
+            font-weight: bold
+            color: #5e5e5e
+            width: fit-content
+    li
+        margin-bottom: 10px
+    .last-tracks__img-block
+        margin-right: 80px
+        box-shadow: 0px 0px 0px 5px #7A66CC, 0px 0px 0px 30px #7a66cc6c, 0px 0px 15px 70px  rgba(0, 0, 0, 0.15)
+        border-radius: 50%
+        margin-bottom: 80px
+    .last-tracks__follow-block
+        display: flex
+        align-items: center
+        figure
+            display: flex
+            align-items: center
+            margin-left: 15px
+            img
+                width: 30px
+                height: 30px
+    .last-tracks__track-list
+        color: #fff
+        .last-tracks__header
+            margin-bottom: 30px
+            font-weight: bold
+    @media screen and (max-width: 768px)
+        .last-tracks__img-block
+            width: 70%
+            margin: 0 auto
+            margin-bottom: 50px
+        .last-tracks__track-list
+            margin: 0 auto
+
+.citate
+    width: 100%
+    margin: 0 auto
+    display: flex
+    border: 1px solid #cecece
+    border-radius: 15px 0px 15px 0px
+    padding: 30px 50px
+    position: relative
+    margin-top: 200px
+    box-sizing: border-box
+    a
+        color: #7A66CC
+    p
+        color: #fff
+        margin-bottom: 15px
+    hr
+        margin-bottom: 15px
+    .citate__text-block
+        width: 60%
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        img
+            position: absolute
+            left: 0px
+            top: 0px
+            width: 70px
+            pointer-events: none
+    .citate__img-block
+        width: 30%
+        box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.35)
+        border-radius: 15px 0px 15px 0px
+        margin-left: auto
+    @media screen and (max-width: 768px)    
+        flex-direction: column
+        .citate__text-block
+            width: 100%
+        img
+            width: 100%
+            margin: 0 auto
+            margin-top: 15px
+            width: 70% !important
+
+.main-info-section
+    width: 100%
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    .main-info-section__text-block
+        margin: 0 auto
+        width: 45vw
+        @media screen and (max-width: 768px)
+            width: 100%
+    .main-info-section__img-block
+        position: relative
+        margin: 0 auto
+        img
+            box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.35)
+            border-radius: 15px 0px 15px 0px
+            width: 100%
+            &:first-child
+                position: absolute
+                top: 15px
+                left: 15px
+                z-index: 0
+            &:last-child
+                z-index: 1
+                position: relative
+    p
+        color: #ffffff98
+    .main-info-section__logo
+        margin-bottom: 30px
+        figure
+            display: flex
+            align-items: center
+            color: #fff
+            img
+                margin-right: 15px
+    .main-info-section__facts
+        margin-top: 30px
+        margin-bottom: 15px
+        list-style: none
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-auto-rows: 1fr 1fr
+        @media screen and ( max-width: 768px )
+            display: block
+        li
+            color: #fff
+            font-weight: bold
+            margin-bottom: 20px
+            &::before
+                content: ""
+                background: #7A66CC
+                width: 30px
+                padding: 5px
+                padding-left: 25px
+                height: 30px
+                border-radius: 15px 0px 15px 0px
+                margin-right: 15px
+                line-height: 60px
+                box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.35)
+.info-section
+    .info-section__blocks
+        margin-top: 15px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        margin-bottom: -100px
+        position: relative
+        bottom: 15vh
+        @media screen and (max-width: 768px)
+            flex-direction: column
+            bottom: 0
+            margin-bottom: 100px
+        .info-section__block
+            max-width: 350px
+            margin: 15px
+            width: 20vw
+            min-width: 210px
+            margin-bottom: 30px
+            font-weight: bold
+            height: 230px
+            background-size: cover
+            position: relative
+            border-radius: 15px 0px 15px 0px
+            box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.35)
+            @media screen and (max-width: 768px)
+                width: 100%
+                max-width: 350px
+                margin: 15px auto
+            &:nth-child(1)
+                background: url('../media/info1.png')
+                background-size: cover
+            &:nth-child(2)
+                background: url('../media/info2.png')
+                background-size: cover
+            &:nth-child(3)
+                background: url('../media/info3.png')
+                background-size: cover  
+            .info-section__block-footer
+                position: absolute
+                background: rgba(122, 102, 204, 0.7)
+                bottom: 0
+                left: 0
+                width: 100%
+                padding: 15px
+                border-radius: 15px 0px 15px 0px
+                box-sizing: border-box
+                p
+                    color: #fff  
+
+a
+    color: #196aff
+    text-decoration: none
+
+.greeting-section
+    width: 100vw
+    height: 100vh
+    margin-bottom: -170px
+    position: relative
+    user-select: none
+    .greeting-section__background
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background: linear-gradient(transparent 70vh, #1C1B21)
+        background-size: cover
+    .greeting-section__track-block
+        text-align: left
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        .greeting-section__text-block
+            color: #FFF
+            width: 100%
+            .greeting-section__caption
+                margin-bottom: 7px
+                font-size: 3vw
+                font-weight: bold
+                @media screen and (max-width: 768px) 
+                    font-size: 5vw
+            .greeting-section__track-name
+                font-size: 8vw
+                white-space: nowrap
+                color: transparent
+                -webkit-text-stroke: 1px white
+                @media screen and (max-width: 768px) 
+                    font-size: 12vw
+    video
+        position: absolute
+        top: 0
+        left: 0
+        height: 100vh
+        width: 100vw
+        object-fit: cover
+        filter: brightness(0.5)
+
+
+
+.nav
+    font-family: "Poppins", sans-serif
+    font-weight: 600
+    z-index: 5
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    user-select: none
+    display: flex
+    padding-top: 30px
+    align-items: center
+    justify-content: center
+    .nav__logo
+        margin: 0 auto
+        height: 60px
+        display: flex
+        align-items: center
+    #mobileMenu__hamburger
+        width: 30px
+        position: absolute
+        top: 50%
+        right: 5vw
+        cursor: pointer
+        @media screen and (min-width: 769px)
+            display: none
+    #mobileMenu__menu
+        display: flex
+        justify-content: center
+        flex-direction: column
+        list-style: none
+        position: fixed
+        top: 0
+        left: 0
+        line-height: 90px
+        text-align: center
+        height: 100vh
+        width: 100vw
+        background: rgba(0, 0, 0, 0.95)
+        border-radius: 50px
+        opacity: 0
+        transition: 0.5s
+        pointer-events: none
+        transform: scale(0.5)
+        #mobileMenu__close
+            width: 30px
+            cursor: pointer
+        a
+            color: #fff
+        &.mobileMenu-active
+            transform: scale(1)
+            opacity: 1
+            transition: 0.5s
+            pointer-events: all
+            border-radius: unset
+    .nav__pc
+        display: flex
+        white-space: nowrap
+
+        li
+            margin-left: 15px
+        @media screen and (max-width: 768px)
+            display: none
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 0 auto
+        margin-left: 0
+        li
+            a
+                color: #fff
+
+.footer
+    background: linear-gradient(transparent 0%, #070709)    
+    width: 100%
+    .footer__email
+        color: #fff
+        text-align: center
+    .footer__logo
+        margin: 30px auto
+        a
+            color: #fff
+        margin-right: 30px
+        img
+            height: 60px
+            margin-right: 10px
+        display: flex
+        justify-content: center
+        align-items: center
+    .footer__social
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        margin-top: 30px
+        .footer__network
+            background: #7A66CC
+            border: 10px solid #2C2C2C
+            border-radius: 50%
+            width: 60px
+            height: 60px
+            margin: 10px
+            position: relative
+            img
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                width: 30px
+    .footer__copyright
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 30px
+        margin-top: 10px
+        font-size: 1em
+        color: #fff
+
+#slider
+        margin-top: 130px
+        width: 100%
+        position: relative
+        #slider__goleft
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            cursor: pointer
+            @media screen and (max-width: 1030px)
+                display: none
+        #slider__goright
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            cursor: pointer
+            @media screen and (max-width: 1030px)
+                display: none
+        .slider__slide
+            padding: 0px 70px
+            box-sizing: border-box
+            justify-content: space-between
+            display: none
+            opacity: 0
+            flex: 1 1 0px
+            transition: 0.3s
+            @media screen and (max-width: 1030px)
+                flex-direction: column
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                padding: 0
+                margin-bottom: 50px
+                opacity: 1
+                transition: 0.3s
+                display: flex
+                animation: appearSlide 0.5s backwards
+                @keyframes appearSlide
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 1
+            &.slider__slide_active
+                opacity: 1
+                transition: 0.3s
+                display: flex
+                animation: appearSlide 0.5s backwards
+                @keyframes appearSlide
+                    0%
+                        opacity: 0
+                    100%
+                        opacity: 1
+
+            .slider__block
+                display: flex
+                box-sizing: border-box
+                box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.35)
+                border-radius: 50px 0px 50px 0px
+                width: fit-content
+                flex-direction: column
+                background: #2F2B2B
+                position: relative
+                padding-bottom: 55px
+                margin-right: 20px
+                &:last-child
+                    margin-right: 0
+                @media screen and (max-width: 1030px)
+                    width: 100%
+                    margin: 15px 0
+                .slider__content
+                    padding: 15px
+                    box-sizing: border-box
+                    color: #fff
+                    h1
+                        margin-bottom: 15px
+                        opacity: 0.5
+                    p
+                        font-weight: bold
+                    .slider__btns
+                        display: grid
+                        grid-template-columns: 1fr 1fr
+                        align-items: flex-end
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        text-align: center
+                        .slider__leftbtn
+                            padding: 15px
+                            opacity: 0.5
+                            white-space: nowrap
+                            font-weight: bold
+                            text-transform: uppercase
+                            font-size: 0.8em
+                        .slider__rightbtn
+                            padding: 15px
+                            background: #7A66CC
+                            border-radius: 30px 0px 30px 0px
+                            text-transform: uppercase
+                            font-weight: bold
+                            height: fit-content
+                            font-size: 0.8em
+                img
+                    border-radius: 30px 0px 30px 0px
+                    width: 100%
+
+.gallery
+        width: 100%
+        display: flex
+        margin: 0 auto
+        margin-top: 150px
+        height: 31.7vw
+        img
+            box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.35)
+            border-radius: 15px 0px 15px 0px
+        .gallery__img-container
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            margin: 0px 0vw
+            padding: 0vw 1vw
+            box-sizing: border-box
+            .gallery__bottom-img
+                width: 100%
+                height: 100%
+                box-sizing: border-box
+            .gallery__img-container-inner
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 100%
+                margin-bottom: 1vw
+                img
+                    width: 100%
+                    height: 100%
+                    box-sizing: border-box
+                    margin-right: 1vw
+                    &:last-child
+                        margin-right: 0
+        @media screen and (max-width: 768px)
+            flex-direction: column
+            height: auto
+            img
+                width: 70% !important
+                margin: 30px auto
+            .gallery__img-container
+                flex-direction: column
+                img
+                    width: 70% !important
+            .gallery__img-container-inner
+                flex-direction: column
+                img
+                    width: 70% !important
+                    margin: 30px auto !important

@@ -1,0 +1,64 @@
+*, html
+    margin: 0
+    padding: 0
+
+body
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #262626
+    font-family: "Raleway"
+    user-select: none
+.form
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 30vw
+    h1
+        text-align: center
+        margin-bottom: 35px
+        font-weight: 200
+        font-size: 72px
+        background: rgb(173,0,255)
+        background: linear-gradient(90deg,rgba(255, 0, 0, 1) 0%,rgba(255, 154, 0, 1) 10%,rgba(208, 222, 33, 1) 20%,rgba(79, 220, 74, 1) 30%,rgba(63, 218, 216, 1) 40%,rgba(47, 201, 226, 1) 50%,rgba(28, 127, 238, 1) 60%,rgba(95, 21, 242, 1) 70%,rgba(186, 12, 248, 1) 80%,rgba(251, 7, 217, 1) 90%,rgba(255, 0, 0, 1) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-size: 300% 300%
+        animation: animatedText 10s ease infinite
+        @keyframes animatedText
+            0%
+                background-position: 0% 50%
+            50%
+                background-position: 100% 50%
+            100%
+                background-position: 0% 50%
+                
+    input
+        width: 100%
+        border-radius: 25px
+        box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.03), 6px 6px 12px rgba(0, 0, 0, 0.16)
+        border: none
+        outline: none
+        background: none
+        font-size: 18px
+        color: #b4b4b4
+        padding: 20px 10px 20px 15px
+        box-sizing: border-box
+        font-weight: 200
+        transition: 0.3s
+        &:focus
+            color: #fff
+            transition: 0.5s
+        &:hover
+            color: #fff
+            transition: 0.5s
+footer
+    position: absolute
+    bottom: 0
+    left: 0
+    padding-left: 15px
+    padding-bottom: 15px
+    color: #fff

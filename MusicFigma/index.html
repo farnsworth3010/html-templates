@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+        <meta charset="UTF-8">
+        <title>Bright Lights</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="shortcut icon" href="./media/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <nav class="nav">
+            <img class="nav__logo" src="./media/titledlogo.png" alt="">
+            <ul class="nav__pc">
+                <li><a href="#">About</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div id="mobileMenu">
+                <img id="mobileMenu__hamburger" src="./media/icons/ham.png" alt="">
+                <ul id="mobileMenu__menu">
+                    <a href=""><li>About</li></a>
+                    <a href=""><li>News</li></a>
+                    <a href=""><li>Music</li></a>
+                    <a href=""><li>Media</li></a>
+                    <a href=""><li>Tours</li></a>
+                    <a href=""><li>Contact</li></a>
+                    <li><img id="mobileMenu__close" src="./media/icons/close.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="greeting-section">
+                <video src="./media/bg.mp4" autoplay muted loop></video>
+                <div class="greeting-section__background"></div>
+                <div id="greeting-section__track-block">
+                    <div class="greeting-section__text-block">
+                        <h2 class="greeting-section__caption">New Single</h1>
+                        <h1 class="greeting-section__track-name">War For Love</h1>
+                    </div>
+                </div>
+            </section>
+            <div class="wrapper">
+            <section class="info-section">
+                <div class="info-section__blocks">
+                    <div class="info-section__block">
+                        <div class="info-section__block-footer">
+                            <p>
+                                Working on my upcoming full-lenth
+                                album that`s releasing later this year.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-section__block">
+                        <div class="info-section__block-footer">
+                            <p>
+                                Halloween vibes. 
+                                Listen my new track!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-section__block">
+                        <div class="info-section__block-footer">
+                            <p>
+                                WarForLove is OUT NOW!! 
+                                Stream it here!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-info-section">
+                <div class="main-info-section__text-block">
+                    <div class="main-info-section__logo">
+                        <a href=""><figure><img src="./media/logo.png" alt="Logo"><h1>Bright Lights</h1></figure></a>
+                    </div>
+                    <p>
+                        Bright Lights is a multi-Grammy nominated singer, songwriter, DJ <br> and record producer. She has written for numerous <br> <br>
+                        pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020.  
+                    </p>
+                    <ul class="main-info-section__facts">
+                        <li>Based in: Los Angeles</li>
+                        <li>Founded in 2011</li>
+                        <li>Genre: #DancePop</li>
+                        <li>Label: 333 Recordings</li>
+                    </ul>
+                </div>
+                <div class="main-info-section__img-block">
+                    <img src="./media/main2.png" alt="">
+                    <img src="./media/main1.png" alt="">
+                </div>
+            </section>
+            <section class="citate">
+                <div class="citate__text-block">
+                    <img src="./media/sym.png" alt="">
+                    <p>“In an age where mainstream music is designed to be as <br>
+                        easily consumed as possible, listening to Bright Lights is <br>
+                        refreshing, to say the least. Her sound is perfect for radio <br>
+                        but complex enough to separate her from other pop newcomers.”</p>
+                    <hr>
+                    <a href="#" class="btn">PopULove.net</a>
+                </div>
+                <img class="citate__img-block" src="./media/citate.png" alt="">
+            </section>
+                <section class="last-tracks">
+                    <img id="audio-player__tracklist-cover" class="last-tracks__img-block" src="./media/tracklist.png" alt="">
+                    <div class="last-tracks__track-list">
+                        <h1 class="last-tracks__header">Last tracks</h1>
+                        <audio id="audio-player" src="./media/audio/0.mp3" controls></audio>
+                        <ul>
+                            <li class="audio-player__track audio-player__track_active" onclick="playTrack(0)"><div class="audio-player__counter">01</div> 3LAU, Bright Lights — How You Love Me</li>
+                            <li class="audio-player__track" onclick="playTrack(1)"><div class="audio-player__counter">02</div> Bright Lights, Kaleena Zanders, Kandy — War For Love</li>
+                            <li class="audio-player__track" onclick="playTrack(2)"><div class="audio-player__counter">03</div> Pink Is Punk, Benny Benassi, Bright Lights — Ghost</li>
+                            <li class="audio-player__track" onclick="playTrack(3)"><div class="audio-player__counter">04</div> Hardwell, Dyro, Bright Lights — Never Say Goodbye</li>
+                            <li class="audio-player__track" onclick="playTrack(4)"><div class="audio-player__counter">05</div> Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now</li>
+                            <li class="audio-player__track" onclick="playTrack(5)"><div class="audio-player__counter">06</div> Zedd, Bright Lights — Follow You Down</li>
+                        </ul>
+                        <div class="last-tracks__follow-block"><h1>Follow me:</h1><figure><img src="./media/spotify.png" alt="">Spotify</figure><figure><img src="./media/apple.png" alt="">iTunes</figure></div>
+                    </div>
+                </section>
+                <section class="gallery">
+                    <img src="./media/gal1.png" alt="">
+                    <div class="gallery__img-container">
+                        <div class="gallery__img-container-inner">
+                            <img src="./media/gal2.png" alt="">
+                            <img src="./media/gal3.png" alt="">
+                        </div>
+                        <img class="gallery__bottom-img" src="./media/gal5.png" alt=""> 
+                    </div>
+                    <img src="./media/gal4.png" alt="">
+                </section>
+                <div id="slider">
+                    <div id="slider__goleft" onclick="prevSlide()"><img src="./media/left.png" alt=""></div>
+                    <div id="slider__goright" onclick="nextSlide()"><img src="./media/right.png" alt=""></div>
+                    <div class="slider__slide slider__slide_active">
+                        <div class="slider__block">
+                            <img src="./media/slider1.png" alt="">
+                            <div class="slider__content">
+                                <h1>Chandler, AZ</h1>
+                                <p>
+                                    The Park at Wild Horse Pass  
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Apr 02 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__block">
+                            <img src="./media/slider2.png" alt="">
+                            <div class="slider__content">
+                                <h1>Ibiza, IBZ</h1>
+                                <p>
+                                    Swag Ibiza Club  
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Jul 08 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__block">
+                            <img src="./media/slider3.png" alt="">
+                            <div class="slider__content">
+                                <h1>Ibiza, IBZ</h1>
+                                <p>
+                                    El Swing Ibiza 
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Jul 10 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__block">
+                            <img src="./media/slider1.png" alt="">
+                            <div class="slider__content">
+                                <h1>Chandler, AZ11</h1>
+                                <p>
+                                    The Park at Wild Horse Pass  
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Apr 02 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__block">
+                            <img src="./media/slider2.png" alt="">
+                            <div class="slider__content">
+                                <h1>Ibiza, IBZ</h1>
+                                <p>
+                                    Swag Ibiza Club  
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Jul 08 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__block">
+                            <img src="./media/slider3.png" alt="">
+                            <div class="slider__content">
+                                <h1>Ibiza, IBZ</h1>
+                                <p>
+                                    El Swing Ibiza 
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Jul 10 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <div class="slider__block">
+                            <img src="./media/slider1.png" alt="">
+                            <div class="slider__content">
+                                <h1>Chandler, AZ</h1>
+                                <p>
+                                    The Park at Wild Horse Pass  
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Apr 02 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__block">
+                            <img src="./media/slider2.png" alt="">
+                            <div class="slider__content">
+                                <h1>Ibiza, IBZ</h1>
+                                <p>
+                                    Swag Ibiza Club  
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Jul 08 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__block">
+                            <img src="./media/slider3.png" alt="">
+                            <div class="slider__content">
+                                <h1>Ibiza, IBZ</h1>
+                                <p>
+                                    El Swing Ibiza 
+                                </p>
+                                <div class="slider__btns">
+                                    <div class="slider__leftbtn">
+                                        Jul 10 2021
+                                    </div>
+                                    <div class="slider__rightbtn">
+                                        tickets
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <figure class="footer__logo">
+                <img src="./media/logo.png" alt="Logo" />
+                <a href="">Bright Lights</a>
+            </figure>
+            <div class="footer__email">
+                <p><b>EMAIL</b>:   test@gmail.com</p>
+            </div>
+            <div class="footer__social">
+                <figure class="footer__network"><img src="./media/social/apple.png" alt=""></figure>
+                <figure class="footer__network"><img src="./media/social/spotify.png" alt=""></figure>
+                <figure class="footer__network"><img src="./media/social/instagram.png" alt=""></figure>
+                <figure class="footer__network"><img src="./media/social/youtube.png" alt=""></figure>
+                <figure class="footer__network"><img src="./media/social/twitter.png" alt=""></figure>
+                <figure class="footer__network"><img src="./media/social/facebook.png" alt=""></figure>
+            </div>
+            <div class="footer__copyright">©2020 DJ bright lights.</div>
+        </footer>
+        <script src="./js/mobile-menu.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/slider.js"></script>
+    </body>
+</html>

@@ -1,0 +1,514 @@
+*, html
+    margin: 0
+    padding: 0
+    scroll-behavior: smooth
+    box-sizing: border-box
+    outline: none !important
+
+body
+    font-family: "Roboto", sans-serif
+    position: relative
+    background: #000
+.section-center
+    height: 100vh
+    position: relative
+    video
+        height: 100%
+        width: 100%
+        object-fit: cover
+    .block
+        position: absolute
+        text-shadow: 
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        align-items: center
+        width: 90vw
+        color: #fff
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+
+        h1 
+            margin-bottom: 10px
+            font-size: 2em
+        p
+            font-size: 1.2em
+        .btn
+            margin-top: 30px
+            padding: 10px 15px
+            border-radius: 15px
+            border: 2px solid #fff
+            display: block
+            width: fit-content
+
+
+#section2
+    /*ЗАдний фон*/
+    background-color: #000000
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    background-size: cover
+    padding: 30px 
+
+    #cnv 
+        width: 50vw
+        margin: 0 auto
+        border-radius: 15px
+        display: block
+        @media screen and (max-width: 768px)
+            width: 90vw
+    form
+        input
+            margin: 10px auto
+            margin-top: 10px
+            padding: 10px 15px
+            border-radius: 15px
+            display: block
+            width: fit-content
+            border: 1px solid #cecece
+            color: #000
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15)
+        #dl
+            margin: 10px auto
+            margin-top: 10px
+            padding: 10px 15px
+            border-radius: 15px
+            display: block
+            width: fit-content
+            background: transparent
+            border: 2px solid #fff
+            color: #fff
+        button
+            margin: 10px auto
+            margin-top: 10px
+            padding: 10px 15px
+            border-radius: 15px
+            display: block
+            width: fit-content
+            background: transparent
+            border: 2px solid #fff
+            color: #fff
+        
+#sharebttn
+    margin: 10px auto
+    margin-top: 10px
+    padding: 10px 15px
+    border-radius: 15px
+    display: block
+    width: fit-content
+    background: transparent
+    border: 2px solid #fff
+    color: #fff
+    
+a
+    color: #fff
+    text-decoration: none
+    user-select: none
+
+#section3
+    height: 100vh
+    video
+        height: 100%
+        width: 100%
+        object-fit: cover
+        position: absolute
+    .block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        align-items: center
+        width: 90vw
+        color: #fff
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+        h1 
+            margin-bottom: 10px
+        .btn
+            margin-top: 10px
+            padding: 10px 15px
+            border-radius: 15px
+            border: 2px solid #9ee98f
+            color: #9ee98f
+            display: block
+            width: fit-content
+
+    
+
+.mobilefooter
+    position: absolute
+    bottom: 0
+    left: 0
+    color: #fff
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 15px 30px
+    @media screen and (min-width: 768px)
+        display: none
+    .download
+        a 
+            color: #fff
+            font-size: 5vw
+            white-space: nowrap
+            transition: 0.3s
+            opacity: 1
+            &:hover
+                transition: 0.3s
+                opacity: 0.7       
+    .img-container
+        img
+            width: 35vw
+            height: auto
+            margin-top: 3px
+            opacity: 1
+            transition: 0.3s
+            &:hover 
+                opacity: 0.7
+                transition: 0.3s           
+    h1
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+    ul
+        display: flex
+        align-items: center
+        justify-content: space-between
+        list-style: none
+        width: 100%
+        li
+            margin-left: 15px
+            text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+            a
+                color: #ffffff
+    @media screen and (max-width: 768px)
+        flex-direction: row
+        align-items: center
+        position: absolute
+        bottom: 0
+        color: #000
+        h1
+            margin-bottom: 15px
+            text-shadow: none 
+            font-size: 1em
+            display: none
+            img
+                margin-left: 10px
+            li
+                margin-bottom: 15px
+                margin-left: 0
+                text-shadow: none 
+                &.download
+                    padding-top: 10px
+                a
+                    color: #000
+                &:last-child
+                    margin-bottom: 0px
+
+
+    
+footer
+    position: fixed
+    bottom: 0
+    left: 0
+    color: #fff
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 15px 30px
+    &#cert-footer
+        @media screen and (max-width: 768px)
+            display: block
+            position: absolute
+            h1
+                display: block
+                margin: 0 auto
+                width: fit-content
+                font-size: 1.5em
+
+    @media screen and (max-width: 768px)
+        display: none
+    .download
+        a 
+            color: #fff
+            font-size: 16px
+            transition: 0.3s
+            opacity: 1
+            &:hover
+                transition: 0.3s
+                opacity: 0.7       
+    .img-container
+        img
+            width: auto
+            height: 30px
+            margin-top: 3px
+            opacity: 1
+            transition: 0.3s
+            &:hover 
+                opacity: 0.7
+                transition: 0.3s           
+    h1
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+    ul
+        display: flex
+        align-items: center
+        justify-content: center
+        list-style: none
+        li
+            margin-left: 15px
+            text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+            a
+                color: #ffffff
+    @media screen and (max-width: 768px)
+        flex-direction: row
+        align-items: center
+        position: absolute
+        bottom: 0
+        color: #000
+        h1
+            margin-bottom: 15px
+            text-shadow: none 
+            font-size: 1em
+            display: none
+        ul    
+            width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            img
+                margin-left: 10px
+            li
+                margin-bottom: 15px
+                margin-left: 0
+                text-shadow: none 
+                &.download
+                    padding-top: 10px
+                a
+                    color: #000
+                &:last-child
+                    margin-bottom: 0px
+
+    
+    
+#darkbg
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.3)
+    width: 100%
+    height: 100%
+
+#dialog
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 15px
+    background: #fff
+    border-radius: 15px
+    input
+        display: block
+        padding: 10px 15px
+        border-radius: 5px
+        border: 2px solid #cecece
+    
+#scroll6
+    img
+        width: 30vw
+        height: auto
+        @media screen and (max-width: 768px)
+            width: 80vw
+            height: auto
+
+#scroll7
+    height: 100vh
+    position: relative
+    video
+        height: 100%
+        width: 100%
+        object-fit: cover
+    .block
+        position: absolute
+        text-shadow: 
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        align-items: center
+        width: 90vw
+        color: #fff
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7)
+
+        p
+            font-size: 1.5em
+            margin-bottom: 15px
+        .btn
+            margin-top: 10px
+            padding: 20px 35px
+            border-radius: 15px
+            border: 5px solid #ff0000
+            font-size: 3em
+            display: block
+            width: fit-content
+            animation: border-cycle 3s linear infinite
+            // -webkit-box-shadow: 5px 5px 0px 0px #ff0000, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0) 
+            // box-shadow: 5px 5px 0px 0px #ff0000d2, 10px 10px 0px 0px rgba(255, 95, 95, 0.685), 15px 15px 0px 0px rgba(255, 161, 161, 0.63), 20px 20px 0px 0px rgba(255, 202, 202, 0.5), 25px 25px 0px 0px rgba(255, 225, 225, 0.432), 5px 5px 15px 5px rgba(0,0,0,0) 
+            @keyframes border-cycle
+                0%
+                    border: 5px solid #ff0000
+                25%
+                    border: 5px solid #ff6600
+                50% 
+                    border: 5px solid #ffd000
+                75%
+                    border: 5px solid #00ff00
+                100%
+                    border: 5px solid #ff0000
+
+
+
+.section-right
+    height: 100vh
+    background-color: #000000
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    background-size: cover
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 15px 15vw
+    video
+        height: 100%
+        width: 100%
+        object-fit: cover
+        position: absolute
+    h1 
+        margin-bottom: 10px
+        color: #fff
+        font-size: 2em
+    p
+        color: #fff
+        font-size: 1.2em
+    .btn
+        margin-top: 15px
+        padding: 10px 15px
+        border-radius: 15px
+        border: 2px solid #fff
+        color: #fff
+        display: block
+        width: fit-content
+        color: #fff
+    img
+        height: 70vh
+        margin-left: 30px
+        border-radius: 15px
+        box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.15)
+        @media screen and (max-width: 768px)
+            margin-left: 0
+    @media screen and (max-width: 768px) 
+        flex-direction: column-reverse
+        padding: 15vw 15vw
+        height: auto
+        h1
+            font-size: 1.5em
+        p
+            font-size: 1em
+        img
+            height: auto
+            margin-bottom: 15px
+            width: 70vw    
+
+
+.section-left
+    height: 100vh
+    background-color: #ffffff
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(236,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2332005E'/%3E%3Cstop offset='1' stop-color='%23750000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='50' cy='50' r='50'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.12'/%3E%3C/svg%3E")
+    background-attachment: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 15px 15vw
+    video
+        height: 100%
+        width: 100%
+        object-fit: cover
+        position: absolute
+    h1 
+        margin-bottom: 10px
+        color: #fff
+        font-size: 2em
+    p
+        color: #fff
+        font-size: 1.2em
+    .btn
+        margin-top: 15px
+        padding: 10px 15px
+        border-radius: 15px
+        border: 2px solid #fff
+        color: #fff
+        display: block
+        width: fit-content
+        color: #fff
+    img
+        height: 70vh
+        margin-right: 30px
+        border-radius: 15px
+        box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.35)
+        @media screen and (max-width: 768px)
+            margin-right: 0
+    @media screen and (max-width: 768px) 
+        flex-direction: column
+        padding: 15vw 15vw
+        height: auto
+        h1
+            font-size: 1.5em
+        p
+            font-size: 1em
+        img
+            height: auto
+            margin-bottom: 15px
+            width: 70vw    
+
+#pageindicator
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
+    right: 30px
+    @media screen and (max-width: 768px)
+        display: none        
+    ul
+        list-style: none
+        display: flex
+        flex-direction: column
+        a
+            margin-bottom: 15px
+            width: 15px
+            height: 15px
+            background: #ffffff88
+            border-radius: 50%
+            z-index: 999
+            &.active
+                background: #fff
+
+#scroll4
+    background-color: #555555
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(140,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%234A0000'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23555555' cx='50' cy='50' r='50'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.2'/%3E%3C/svg%3E")
+    background-attachment: fixed
+
+#scroll6
+    background-color: #555555
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(140,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23223108'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23555555' cx='50' cy='50' r='50'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.21'/%3E%3C/svg%3E")
+    background-attachment: fixed
+
+#cert-page
+    @media screen and (max-width: 768px)
+        padding-bottom: 100px
+
+.hidden-cert
+    display: none !important

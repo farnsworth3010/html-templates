@@ -1,0 +1,517 @@
+*, body
+    margin: 0
+    padding: 0
+    outline: none
+    scroll-behavior: smooth
+
+body
+    background: #f6f6f6
+    font-family: 'Roboto', sans-serif
+    scroll-behavior: smooth
+    padding-top: 100px
+
+input
+    font-family: 'Montserrat'
+
+h1, h2, h3, h4, h5, h6
+    font-weight: bold
+    font-family: "Montserrat"
+    color: #2e2e33;
+
+a
+    color: #000000
+    text-decoration: none
+
+.wrapper
+    padding: 0 10vw
+
+
+.material-icons
+    user-select: none
+
+nav
+    border-bottom: 1px solid #e3e4e6
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    box-sizing: border-box
+    background-color: #FFFFFF
+    z-index: 3
+    ul
+        list-style: none
+        display: grid
+        grid-template-columns: 10% 1fr 10% 10%
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            border-right: 1px solid #e3e4e6
+            padding: 25px
+            cursor: pointer
+            &:last-child
+                border-right: none
+            &#logo
+                position: relative
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                #nav-logo
+                    background-image: url('../img/logo.png')
+                    background-repeat: no-repeat
+                    background-size: 100% auto
+                    background-position: center
+                    width: 70%
+                    height: 100%
+            &#adress-container
+                padding: 0
+                position: relative
+                transition: 0.3s
+                &:hover
+                    transition: 0.3s
+                    opacity: 0.6
+                input
+                    width: 100%
+                    height: 100%
+                    box-sizing: border-box
+                    border: none
+                    padding-left: 55px
+                    padding-right: 25px
+                    cursor: pointer
+                    &:focus
+                        cursor: text
+                #adress-icon
+                    position: absolute
+                    left: 25px
+                    top: 50%
+                    transform: translateY(-50%)
+                    user-select: none
+                    cursor: default
+            &#login
+                span
+                    margin-right: 5px
+            &#cart
+                span
+                    margin-right: 5px
+     
+#main
+    #recs-slider
+        width: 100%
+        box-sizing: border-box
+        scrollbar-height: none
+        overflow-x: scroll
+        padding: 10px
+        &::-webkit-scrollbar
+            display: none
+        .rec-blocks-container
+            -ms-overflow-style: none
+            scrollbar-width: none
+            display: flex
+            width: fit-content
+            .rec-block
+                width: 300px !important
+                height: 180px
+                border-radius: 15px
+                background-color: #FFFFFF
+                margin-right: 20px
+                box-shadow: 0 7px 10px -8px rgba(157,157,163,0.5)
+                transition: 0.3s
+                background-image: url('../img/rec/1.jpg')
+                background-size: 100% 100%
+                cursor: pointer
+                &:nth-child(2)
+                    background-image: url('../img/rec/2.jpg')
+                &:nth-child(3)
+                    background-image: url('../img/rec/3.jpg')
+                &:nth-child(4)
+                    background-image: url('../img/rec/4.jpg')
+                &:nth-child(5)
+                    background-image: url('../img/rec/5.jpg')
+                &:nth-child(6)
+                    background-image: url('../img/rec/6.jpg')
+                &:nth-child(7)
+                    background-image: url('../img/rec/7.jpg')
+                &:hover
+                    transform: translateY(-10px)
+                    transition: 0.3s
+                    box-shadow: 0 15px 15px -8px rgba(157,157,163,0.3)
+    .list-title
+        margin-top: 15px
+        margin-bottom: 20px
+        font-size: 2.5em
+    .search-container
+        display: flex
+        width: 60%
+        margin-bottom: 15px
+        .filters-btn
+            border-radius: 20px
+            box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.04), 0px 8px 8px 0px rgba(0,0,0,0.04)
+            padding: 15px
+            box-sizing: border-box
+            background-color: #ffffff
+            padding-left: 50px
+            position: relative
+            font-size: 14px
+            margin-left: 20px
+            span
+                position: absolute
+                left: 15px
+                top: 50%
+                transform: translateY(-50%)
+        .search-box
+            width: 100%
+            position: relative
+            input
+                border-radius: 20px
+                box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.04), 0px 8px 8px 0px rgba(0,0,0,0.04)
+                border: none
+                padding: 15px
+                width: 100%
+                padding-left: 50px
+                box-sizing: border-box
+                font-size: 14px
+            span
+                position: absolute
+                left: 15px
+                top: 50%
+                transform: translateY(-50%)
+    .categories
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+        .category-block
+                margin-right: 10px
+                box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.04), 0px 8px 8px 0px rgba(0,0,0,0.04)
+                padding: 15px
+                border-radius: 12px
+                cursor: pointer
+                user-select: none
+                font-family: 'Montserrat', sans-serif
+                box-shadow: 0 7px 10px -8px rgba(157,157,163,0.5)
+                transition: 0.3s
+                display: flex
+                flex-direction: column
+                height: fit-content
+                background-color: #ffffff
+                &:hover
+                    transform: translateY(-7px)
+                    transition: 0.3s
+                    box-shadow: 0 15px 15px -8px rgba(157,157,163,0.3)
+                img
+                    height: 37px
+                    width: fit-content
+
+        div:first-child
+            display: flex
+            .category-block
+                &:last-child
+                    margin-right: 0
+        div:last-child
+            .category-block
+                margin-right: 0
+            
+    .restaurants-list
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+        grid-auto-flow: 100px
+        grid-gap: 25px
+        position: relative
+        margin-bottom: 99px
+        .more-restaurants
+            position: absolute
+            bottom: -85px
+            left: 0
+            text-align: center
+            border-radius: 7px
+            padding: 20px
+            background-color: #54545a
+            width: 100%
+            box-sizing: border-box
+            color: #ffffff
+            transition: 0.3s
+            &:hover
+                background-color: #3f3f42
+                transition: 0.3s
+        .restaurant-block
+            border-radius: 15px
+            background-color: #ffffff
+            box-shadow: 0 7px 10px -8px rgba(157,157,163,0.5)
+            padding: 15px
+            display: flex
+            position: relative
+            flex-direction: column
+            box-sizing: border-box
+            padding-top: 160px
+            transition: 0.3s
+            user-select: none
+            &:hover
+                transform: translateY(-10px)
+                transition: 0.3s
+                box-shadow: 0 15px 15px -8px rgba(157,157,163,0.3)
+
+            .cover
+                background-image: url('../img/rest/1.jpg')
+                background-repeat: no-repeat
+                object-fit: center
+                position: absolute
+                background-size: 100% auto
+                border-radius: 15px 15px 0px 0px
+                background-position: center
+                width: 100%
+                height: 150px
+                left: 0 
+                top: 0
+                .restaurant-logo
+                    position: absolute
+                    left: 15px
+                    bottom: 15px
+                    background: #ffffff
+                    border-radius: 5px
+                    padding: 5px
+                    .logo
+                        background-image: url('../img/rest/logo/1.jpg')
+                        background-size: 100% auto
+                        background-position: center
+                        background-repeat: no-repeat
+                        width: 35px
+                        height: 35px
+            &:nth-child(2n)
+                .cover
+                    background-image: url('../img/rest/2.jpg')
+                .restaurant-logo
+                    .logo
+                        background-image: url('../img/rest/logo/2.jpg')
+            &:nth-child(3n)
+                .cover
+                    background-image: url('../img/rest/3.jpg')
+                .restaurant-logo
+                    .logo
+                        background-image: url('../img/rest/logo/3.jpg')
+            &:nth-child(4n)
+                .cover
+                    background-image: url('../img/rest/4.jpg')
+                .restaurant-logo
+                    .logo
+                        background-image: url('../img/rest/logo/4.jpg')
+            .info
+                display: flex
+                flex-direction: column
+                h3
+                    margin-bottom: 10px
+                p
+                    display: inline-block
+                    align-items: center
+                    background-color: #f6f6f6
+                    border-radius: 30px
+                    padding: 5px 7px
+                    font-weight: bold
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 14px
+                    margin-right: 5px
+                    color: #54545a
+                    &.rate
+                        color: #ffae00
+                        span
+                            font-size: 12px
+                            margin-right: 5px
+                    &.deliver-time
+                        color: #0ec645
+
+
+.restaurant-info
+    background-color: #ffffff
+    padding: 15px 10vw
+    margin-top: -25px
+    padding-bottom: 30px
+    .back
+        display: flex
+        align-items: center
+        span
+            font-size: 2em
+    .restaurant-title
+        font-size: 3em
+        margin-top: 15px
+        margin-bottom: 15px
+    .info
+        display: flex
+        flex-direction: row
+        h3
+            margin-bottom: 10px
+        a
+            display: inline-block
+            align-items: center
+            background-color: #ffffff
+            border-radius: 30px
+            padding: 7px 12px
+            font-weight: bold
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
+            font-family: 'Montserrat', sans-serif
+            font-size: 14px
+            margin-right: 5px
+            color: #54545a
+            &.rate
+                span
+                    font-size: 12px
+                    margin-right: 5px
+            &.deliver-time
+                color: #0ec645
+    div:nth-child(2)
+        display: flex
+        justify-content: space-between
+        .restaurant-logo
+            padding: 15px
+            border-radius: 5px
+            border: 1px solid #e3e4e6
+            img
+                width: 126px
+                height: 100%
+.restaurant-categories
+    font-weight: bold
+    color: #939393
+    position: sticky
+    top: 74px
+    background: #ffffff
+    padding: 15px 10vw
+    padding-right: 25vw
+    border-bottom: 1px solid #e3e4e6
+    border-top: 1px solid #e3e4e6
+    z-index: 1
+    ul
+        list-style: none
+        display: flex
+        align-items: center
+        li
+            margin-right: 15px
+            height: fit-content
+            &.active
+                color: #454545
+                background-color: #d0d0d0
+                padding: 7px 12px
+                border-radius: 15px
+.sidebar
+    position: fixed
+    box-sizing: border-box
+    z-index: 2
+    right: 0
+    top: 0
+    background: #ffffff
+    height: 100%
+    width: 20%
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.10)
+    padding-top: 75px
+    section
+        padding: 15px 20px
+        border-bottom: 1px solid #e3e4e6
+        display: flex
+        &.your-order
+            justify-content: space-between
+            img
+                width: 50px
+            p:first-child
+                font-size: 14px
+                color: #989898
+        &.delivery-price
+            justify-content: space-between
+            p:last-child
+                font-weight: bold
+        &.product
+            justify-content: space-between
+            .price
+                font-weight: bold
+                
+    .order-block
+        position: absolute
+        bottom: 0
+        left: 0
+        padding: 15px
+        width: 100%
+        box-sizing: border-box
+        a
+            display: flex
+            justify-content: space-between
+            color: #ffffff
+            border-radius: 5px
+            background-color: #37c73c
+            padding: 20px 15px
+            box-sizing: border-box
+
+.restaurant-pa
+    .section-title
+        margin-bottom: 15px
+    .wrapper
+        padding: 15px 10vw
+        padding-right: 25vw
+    footer
+        padding-right: 20vw
+    .restaurant-info
+        padding-right: 25vw
+
+
+footer
+    background-color: #ffffff
+    box-sizing: border-box
+    .footer-section
+        padding: 15px 10vw
+        width: 100%
+        box-sizing: border-box
+        border-top: 1px solid #e3e4e6
+    .footer-info
+        background: #f6f6f6
+        p
+            width: 60%
+            font-size: 14px
+        a
+            color: #2448ff
+            cursor: pointer
+    .footer-navigation
+        display: flex
+        align-items: center
+        background: #f6f6f6
+        #goup
+            display: flex
+            align-items: center
+            span
+                margin-right: 5px
+    .footer-links
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .links
+            display: flex
+            flex-direction: column
+            .logo
+                position: relative
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 50px
+                width: 150px
+                margin-bottom: 15px
+                div
+                    background-image: url('../img/logo.png')
+                    background-repeat: no-repeat
+                    background-size: 100% auto
+                    background-position: center
+                    width: 100%
+                    height: 100%
+            .nav-links
+                list-style: none
+                display: flex
+                li
+                    margin-right: 10px
+                    color: #5d5d5d
+        .socials
+            display: flex
+            flex-direction: column
+            color: #5d5d5d
+        .apps
+            display: flex
+            flex-direction: column
+            color: #5d5d5d
+    .footer-copyright
+        display: flex
+        justify-content: space-between
+        .copyright
+            color: #5d5d5d

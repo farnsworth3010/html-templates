@@ -1,0 +1,147 @@
+/* First panel */
+#bonus-panel{
+    position: fixed;
+    bottom: -300px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    color: #fff;
+    padding: 25px 30px;
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, #6614ff, #9900ff);
+    box-sizing: border-box;
+    user-select: none;
+    transition: 0.3s;
+    box-shadow: none;
+    z-index: 5;
+    /* First panel font size */
+    font-size: 1em
+    /* First panel font size */
+}
+#bonus-panel img.panel-emoji{
+    /* First img size */
+    height: 30px;
+    /* First img size */
+}
+/* First panel */
+
+
+
+/* Second panel */
+#bonus-second-panel{
+    position: fixed;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    background: #fff;
+    box-sizing: border-box;
+    transition: 0.3s;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+#bonus-second-panel__content{
+    background: #fff;
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#bonus-second-panel__content p{
+    display: flex;
+    align-items: center;
+    margin: 7px 0px;
+    white-space: nowrap;
+    /* Second panel lines font size */
+    font-size: 2.3vw;
+    /* Second panel lines font size */
+}
+#bonus-second-panel__content .panel-emoji{
+    /* Second panel emoji size */
+    height: 20px;
+    /* Second panel emoji size */
+    margin: 5px;
+}
+.bonus-second-panel__content__line{
+    display: flex;
+    justify-content: center;
+}
+#bonus-second-panel__header{
+    background: linear-gradient(to left, #6614ff, #9900ff);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    /* second panel header font size */
+    font-size: 1em;
+    /* second panel header font size */
+
+}
+#bonus-second-panel__footer{
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+#bonus-second-panel__footer .bonus-second-panel__number{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+    /* Second number phone number font size */ 
+    font-size: 1em;
+    /* Second number phone number font size */ 
+}
+#bonus-second-panel__footer .bonus-second-panel__number img{
+    /* Phone number img size */
+    height: 10px;
+    /* Phone number img size */
+    margin: 5px;
+}
+/* Second panel */
+
+
+/* for both panels */
+@media screen and (min-width: 768px) {
+    #bonus-panel{
+        display: none;
+    }
+    #bonus-second-panel{
+        display: none;
+    }
+    /* hide panels on pc */
+}
+.bonus-panel__close{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 10px;
+    top: -35px;
+    background: #000;
+    border-radius: 50%;
+}
+.bonus-panel__close img{
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bonus-panel-active{
+    bottom: 0 !important;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.hidden-panel{
+    bottom: -300px !important;
+    transition: 0.3s;
+    box-shadow: none;
+}
+/* for both panels */
